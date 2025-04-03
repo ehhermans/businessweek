@@ -1,2 +1,2 @@
 # businessweek
-concept: volwassen merch kinda timmerman tim vibes 
+concept: volwassen k3 merch kinda timmerman tim vibes 
