@@ -1,0 +1,199 @@
+$primary-pink: #fa9bce;
+$secondary-pink: #E02C86;
+$light-pink: #F91B8F;
+$dark-pink: #9c1156;
+
+$audiowide-font: "Audiowide", sans-serif;
+
+// RESET CSS
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// WEBSITE STYLING
+body {
+    background: $primary-pink;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(/images/background-sparkel.png);
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: $secondary-pink;
+    background: linear-gradient(180deg, $secondary-pink 0%, #ffffff 100%);
+    height: 150px;
+    border-bottom: $dark-pink solid 8px;
+
+    > div {
+        display: flex;
+    }
+
+    .img-container {
+        max-width: 200px;
+        position: relative;
+    }
+
+    .logo {
+        width: 100%;
+        z-index: 2;
+        position: relative;
+    }
+
+    h2 {
+        color: #fff;
+        font-family: $audiowide-font;
+        text-shadow: 0px 3px 2px #2B2B2B;
+        font-size: 64px;
+        text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    }
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: fit-content;
+    position: relative;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    padding: 50px;
+    min-height: 300px;
+
+    h1 {
+        color: $light-pink;
+        font-family: $audiowide-font;
+        font-size: 64px;
+        text-align: center;
+        line-height: 1.3;
+        margin-bottom: 20px;
+
+        span {
+            font-size: 96px;
+        }
+    }
+}
+
+.btn {
+    padding: 10px 50px;
+    background: url(/images/btn-bg.png);
+    border-radius: 20px;
+    font-family: $audiowide-font;
+    text-decoration: none;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.new-text {
+    position: absolute;
+    top: -100px;
+    right: -160px;
+}
+
+.text-section {
+    position: relative;
+    display: flex;
+    padding: 150px 0;
+
+    &::after {
+        content: "";
+        background: url(/images/stars.png);
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.hammer-div {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: -250px;
+    }
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    gap: 10px;
+
+    .menu-item {
+        display: flex;
+        background-color: #fff;
+        padding: 15px 30px;
+
+        &:last-of-type img {
+            max-width: 180px;
+        }
+        
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+    }
+}
