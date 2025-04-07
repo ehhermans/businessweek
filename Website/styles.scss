@@ -60,7 +60,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background: url(/images/background-sparkel.png);
+        background: url('images/background-sparkel.png');
         display: block;
         width: 100%;
         height: 100%;
@@ -134,7 +134,7 @@ header {
 
 .btn {
     padding: 10px 50px;
-    background: url(/images/btn-bg.png);
+    background: url('images/btn-bg.png');
     border-radius: 20px;
     font-family: $audiowide-font;
     text-decoration: none;
@@ -159,7 +159,7 @@ header {
 
     &::after {
         content: "";
-        background: url(/images/stars.png);
+        background: url('images/stars.png');
         width: 50%;
         height: 100%;
         position: absolute;
