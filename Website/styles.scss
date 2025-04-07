@@ -151,8 +151,11 @@ header {
 
 .text-section {
     position: relative;
-    display: flex;
-    padding: 150px 0;
+    
+    .container {
+        display: flex;
+        padding: 150px 0;
+    }
 
     &::after {
         content: "";
@@ -171,7 +174,9 @@ header {
 
     img {
         position: absolute;
-        top: -250px;
+        top: -100px;
+        left: 80px;
+        width: 800px;
     }
 }
 
